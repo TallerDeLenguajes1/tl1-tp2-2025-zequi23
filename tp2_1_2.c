@@ -9,15 +9,20 @@ int main(){
 
 int i; 
 double vt[N]; 
+
+
 for(i = 0;i<N; i++) 
 {  
 vt[i]=1+rand()%100;
  
 } 
 
+double *pr;
+
+pr = vt;
 for ( i = 0; i < N; i++)
 {
-    printf("%.2f\n", vt[i]);
+    printf("%.2f\n", *(pr + i));
 }
 
 
